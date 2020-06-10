@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Product} from '../services/product.model';
 import {BehaviorSubject, Observable, Subject, Subscriber} from 'rxjs';
-import {of} from 'rxjs';
 import {map} from "rxjs/operators";
 @Injectable()
 export class CartService {
