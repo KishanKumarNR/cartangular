@@ -27,9 +27,15 @@ export class ProductService {
     return of(<Product[]>[
       <Product>{id: 1, name: 'item1', price: 123.09,
         img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU" },
-      <Product>{id: 2, name: 'Green and gray', price: 99.09,
+      <Product>{id: 2, name: 'Green and gray shades', price: 99.09,
         img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU"},
-      <Product>{id: 3, name: 'Green item', price: 99.09,
+      <Product>{id: 3, name: 'trapezium', price: 99.19,
+        img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU"},
+      <Product>{id: 4, name: 'jelly glass', price: 199.00,
+        img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU"},
+      <Product>{id: 5, name: 'cards', price: 299.90,
+        img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU"},
+      <Product>{id: 6, name: 'water knot', price: 60.83,
         picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIMCi0h3phSUMntggEOOskGzmFmJc1Gc5f3kEngrGAoJCY8o24&usqp=CAU"}
     ]);
   }

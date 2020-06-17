@@ -3,9 +3,10 @@
     <spa-product [name]="product.name"
                  [size]="'3'"
                  [price]="product.price"
+                 [picture]="product.img_url"
     ></spa-product>
     <spa-color-list [colors]="product.colors"></spa-color-list>
-    <button class="add-to-cart" (click)="addToCart(product)">
+    <button class="btn btn-outline-dark add-to-cart" (click)="addToCart(product)">
       Add to cart
     </button>
   </div>

@@ -21,3 +21,24 @@
   font-size: 16px;
   color: white !important;
 }
+
+.bottomFixed {
+  position: absolute;
+}
+
+.wrapper {
+  min-height: 85%;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.footer {
+  background: #1976d2;
+  color: white;
+  line-height: 20px;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}

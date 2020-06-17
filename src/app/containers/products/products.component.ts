@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 import {Product} from "../../services/product.model";
 import {ProductService} from "../../services/product.service";
 import {CartService} from "../../services/cart.service";
@@ -14,7 +14,8 @@ export class ProductsComponent implements OnInit {
   public items: Product[] = [];
 
   constructor(private productsService: ProductService,
-              private cartService: CartService) {
+              private cartService: CartService,
+              private http: HttpClient) {
     productsService.getProducts()
       .subscribe(_ => {
         console.log(_ ,"the product detials")

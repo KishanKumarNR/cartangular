@@ -5,14 +5,15 @@
     (activeFilters)="updateActivatedFilters($event)"
   ></spa-product-filters>
 </div>
-<div class="list-products">
+<div class="card-deck list-products">
   <div class="list-product" *ngFor="let item of itemsAfterFilter()">
-    <spa-product
-      [id]="item.id"
-      [name]="item.name"
-      [price]="item.price"
-      [currency]="item.currency">
-    </spa-product>
-  </div>
+      <spa-product
+        [id]="item.id"
+        [name]="item.name"
+        [price]="item.price"
+        [currency]="item.currency"
+        [picture]="item.img_url">
+      </spa-product>
+    </div>
 </div>
 

@@ -9,10 +9,12 @@ import {RouterModule} from '@angular/router';
 import {routes} from './products.routes';
 import { ShoppingCartComponent } from '../../components/shopping-cart/shopping-cart.component';
 import { ColorListComponent } from '../../components/color-list/color-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule.forChild(routes)
   ],
   declarations: [

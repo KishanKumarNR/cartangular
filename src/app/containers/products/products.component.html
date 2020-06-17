@@ -1,13 +1,1 @@
-<!--<ng-container *ngIf="!(loading$ | async); else loadingTpl">-->
-
-<!--  <input placeholder="Search Product.." [formControl]="search">-->
-
-<!--  <app-product *ngFor="let product of (products$ | async)" [product]="product"></app-product>-->
-
-<!--</ng-container>-->
-
-<!--<ng-template #loadingTpl>...</ng-template>-->
-
-
-<spa-product-list [items]="items"></spa-product-list>
-
+<spa-product-list class="productCardsContainer" [items]="items"></spa-product-list>
