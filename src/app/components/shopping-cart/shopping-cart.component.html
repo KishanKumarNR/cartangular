@@ -1,13 +1,17 @@
+<div style="display: inline-block">
 <p>You have {{shoppingCartItems.length}} items in your bag</p>
-<div *ngFor="let item of shoppingCartItems">
-  <spa-product
-    [id]="item.id"
-    [name]="item.name"
-    [price]="item.price"
-    [picture]="item.img_url"
-    [currency]="item.currency">
-  </spa-product>
-  <spa-color-list [colors]="item.colors"></spa-color-list>
-  <button class="remove-item" (click)="removeItem(item)">Remove</button>
-</div>
-<p>Total: {{getTotal() | async}}</p>
+  <div *ngFor="let item of shoppingCartItems">
+    <spa-product
+      [id]="item.id"
+      [name]="item.name"
+      [price]="item.price"
+      [picture]="item.img_url"
+      [currency]="item.currency">
+    </spa-product>
+    <spa-color-list [colors]="item.colors"></spa-color-list>
+    <button class="btn btn-outline-dark remove-item" (click)="removeItem(item)">
+      Remove
+    </button>
+  </div>
+  <p>Total: {{getTotal() | async}}</p>
+  </div>
